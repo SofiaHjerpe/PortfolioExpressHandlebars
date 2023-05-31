@@ -1,4 +1,7 @@
-<h2>Welcome to the contact page</h2>
-{{#each people}}
-<p>{{.}}</p>
-{{/each}}
+<h2 class="heading">Contact page</h2>
+<div class="container">
+  {{contactme}}
+  {{#each contact as |key value|}}
+  <p><strong>{{value}}:</strong> {{@key}}</p>
+  {{/each}}
+</div>

@@ -1,4 +1,8 @@
-<h2>My Projects!</h2>
-{{#each projects}}
-<p>{{Title}}, {{Description}}, {{Languages}} ({{Level}})</p>
-{{/each}}
+ <h2 class="heading">My Projects</h2>
+    {{#each projects}}
+    <div class="project">
+    <p><strong>Title: {{title}}</strong></p><br>
+    <p><span style="font-weight:600">Description:</span>  {{description}}</p><br>
+    <p><span style="font-weight:600">Languages:</span> {{languages}}</p><br>
+    </div>
+    {{/each}}
